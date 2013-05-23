@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "js": [ "ebs_cs.js" ],
+      "matches": [ "http://*/forms/*", "https://*/forms/*","http://*/dev60cgi/*", "https://*/dev60cgi/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "Oracle E-Business Suite R12&11i Form Startup.",
+   "icons": {
+      "128": "oracle-128.png",
+      "16": "oracle-16.png",
+      "32": "oracle-32.png"
+   },
+   "manifest_version": 2,
+   "name": "Oracle EBS R12&11i Enablement for Chrome",
+   "permissions": [ "tabs", "http://*/forms/*", "https://*/forms/*", "http://*/dev60cgi/*", "https://*/dev60cgi/*"],
+   "version": "0.1.2"
+}
